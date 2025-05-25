@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الحروف والسيارة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="road">
+            <img id="car" src="assets/car.png" alt="سيارة">
+            <div id="finish-line"></div>
+        </div>
+
+        <div id="question-area">
+            <p>اختر الحرف الصحيح:</p>
+            <h2 id="target-letter-display">A</h2>
+        </div>
+
+        <div id="choices-area">
+        </div>
+
+        <div id="feedback-area">
+            <p id="feedback-text"></p>
+        </div>
+         <button id="reset-button" style="display:none;">اللعب مرة أخرى</button>
+    </div>
+
+    <audio id="correct-sound" src="assets/correct.mp3"></audio>
+    <audio id="wrong-sound" src="assets/wrong.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
